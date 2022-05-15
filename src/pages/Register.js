@@ -1,9 +1,9 @@
 import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png'
 
 
-export default function Login(){
+export default function Register(){
     return (
-        <section id="login">
+        <section id="register">
             <div className="container text-white p-3 mt-5" style={{ maxWidth: '1200px' }}>
                 <div className="row mt-5 mb-5 ms-auto me-auto">
                     <div className="d-flex justify-content-between">
@@ -19,8 +19,11 @@ export default function Login(){
                         <div style={{ width: '80%' }}>
                             <div className="card m-5 p-4 pt-2" style={{ backgroundColor: '#181818', borderRadius: '10px'}}>
                                 <div className="card-body">
-                                    <p className='fw-bold card-title mb-4' style={{ fontSize: '36px' }}>Login</p>
+                                    <p className='fw-bold card-title mb-4' style={{ fontSize: '36px' }}>Register</p>
                                     <form>
+                                        <div className="mb-3">
+                                            <input type="text" className="form-control p-2 form-input" placeholder='Name' id="name" />
+                                        </div>
                                         <div className="mb-3">
                                             <input type="email" className="form-control p-2 form-input" placeholder='Email' id="exampleInputEmail1" aria-describedby="emailHelp" />
                                         </div>

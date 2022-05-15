@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './assets/css/style.css';
-import Login from './pages/Login';
+import Register from './pages/Register';
 
 function App() {
   return (
     <>
-      <Login/>
+      <Register />
     </>
   );
 }

@@ -12,3 +12,14 @@ body{
     color: red !important;
 }
 
+.login-button{ 
+    font-weight: 800;
+    background-color: #F74D4D; 
+    color: white;
+}
+
+.form-input {
+    color: white;
+    border: 2px solid #BCBCBC;
+    background: rgba(210, 210, 210, 0.25);
+}
