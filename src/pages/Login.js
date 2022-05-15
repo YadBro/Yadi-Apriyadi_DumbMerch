@@ -12,7 +12,7 @@ export default function Login(){
                             <h1 className='fw-bold mb-3' style={{ fontSize: '56px' }}>Easy, Fast and Reliable</h1>
                             <p className='col-md-9' style={{ fontWeight: 400, color: '#6A6A6A', fontSize: '18px' }}>Go shopping for merchandise, just go to dumb merch shopping, the biggest merchandise in <b>Indonesia</b></p>
                             <div className="d-flex justify-content-between mt-5" style={{ width: '18rem' }}>
-                                <a className="btn p-2 rounded me-2 w-50 login-button">Login</a>
+                                <a className="btn p-2 rounded me-2 w-50 submit-button">Login</a>
                                 <a className="btn p-2 rounded w-50" style={{ fontWeight: '800', color: '#B7B7B7' }}>Register</a>
                             </div>
                         </div>
@@ -27,7 +27,7 @@ export default function Login(){
                                         <div className="mb-3">
                                             <input type="password" className="form-control p-2 form-input" placeholder='Password' id="exampleInputPassword1" />
                                         </div>
-                                        <button type="submit" className="btn card-link w-100 mt-4 p-2 login-button">Login</button>
+                                        <button type="submit" className="btn card-link w-100 mt-4 p-2 submit-button">Login</button>
                                     </form>
                                 </div>
                             </div>

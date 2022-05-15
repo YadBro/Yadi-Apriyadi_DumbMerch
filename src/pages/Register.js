@@ -1,4 +1,4 @@
-import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png'
+import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png';
 
 
 export default function Register(){
@@ -12,11 +12,11 @@ export default function Register(){
                             <h1 className='fw-bold mb-3' style={{ fontSize: '56px' }}>Easy, Fast and Reliable</h1>
                             <p className='col-md-9' style={{ fontWeight: 400, color: '#6A6A6A', fontSize: '18px' }}>Go shopping for merchandise, just go to dumb merch shopping, the biggest merchandise in <b>Indonesia</b></p>
                             <div className="d-flex justify-content-between mt-5" style={{ width: '18rem' }}>
-                                <a className="btn p-2 rounded me-2 w-50 login-button">Login</a>
+                                <a className="btn p-2 rounded me-2 w-50 submit-button">Login</a>
                                 <a className="btn p-2 rounded w-50" style={{ fontWeight: '800', color: '#B7B7B7' }}>Register</a>
                             </div>
                         </div>
-                        <div style={{ width: '80%' }}>
+                        <div style={{width: '80%'}}>
                             <div className="card m-5 p-4 pt-2" style={{ backgroundColor: '#181818', borderRadius: '10px'}}>
                                 <div className="card-body">
                                     <p className='fw-bold card-title mb-4' style={{ fontSize: '36px' }}>Register</p>
@@ -30,7 +30,7 @@ export default function Register(){
                                         <div className="mb-3">
                                             <input type="password" className="form-control p-2 form-input" placeholder='Password' id="exampleInputPassword1" />
                                         </div>
-                                        <button type="submit" className="btn card-link w-100 mt-4 p-2 login-button">Login</button>
+                                        <button type="submit" className="btn card-link w-100 mt-4 p-2 submit-button">Register</button>
                                     </form>
                                 </div>
                             </div>

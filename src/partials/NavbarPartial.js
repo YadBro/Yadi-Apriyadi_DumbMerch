@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png'
 
 export default function NavbarPartial(){
