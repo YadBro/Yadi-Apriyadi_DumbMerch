@@ -8,7 +8,7 @@ export default function DetailPage() {
             <div className="content-detail mt-5 mb-5 ms-auto me-auto">
                 <div className="d-flex gap-5">
                     <div style={{ width: '49%' }}>
-                        <img className="img-fluid" src={MouseImg} alt="Product Image" />
+                        <img className="img-fluid" src={MouseImg} alt="ProductImage" />
                     </div>
                     <div className="d-flex flex-column" style={{ width: '60%' }}>
                         <h1 className='detail-title mt-4'>Mouse</h1>

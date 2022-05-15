@@ -14,7 +14,7 @@ export default function Home(){
                     {/* CARD PRODUCTS START */}
                     <div className="d-flex gap-3 mt-4">
                         <div className="card overflow-hidden" style={{ width: '15rem' }}>
-                            <img src={MouseImg} className="card-img-top w-100" alt='Product Image'></img>
+                            <img src={MouseImg} className="card-img-top w-100" alt='ProductImage'></img>
                             <div className="card-body">
                                 <h5 className="card-title fw-bold">Mouse</h5>
                                 <p className="card-text mt-1">
@@ -27,7 +27,7 @@ export default function Home(){
 
 
                         <div className="card overflow-hidden" style={{ width: '15rem' }}>
-                            <img src={KeyboardImg} className="card-img-top w-100" alt='Product Image'></img>
+                            <img src={KeyboardImg} className="card-img-top w-100" alt='ProductImage'></img>
                             <div className="card-body">
                                 <h5 className="card-title fw-bold">Keyboard</h5>
                                 <p className="card-text mt-1">

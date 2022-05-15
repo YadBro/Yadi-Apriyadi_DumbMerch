@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png'
 
-export default function NavbarPartial(){
+export default function NavbarPartialHome(){
     return(
         <nav className="navbar fw-bold navbar-expand-lg navbar-dark p-4" style={{ fontSize: '18px' }}>
             <div className="container-fluid">
@@ -33,7 +33,7 @@ export default function NavbarPartial(){
                             <a className="nav-link text-white" aria-current="page" href="#">Complain</a>
                         </li>
                         <li className="nav-item me-2">
-                            <a className="nav-link text-white" aria-current="page" href="#">Profile</a>
+                            <a className="nav-link text-white active" aria-current="page" href="#">Profile</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white" aria-current="page" href="#">Logout</a>

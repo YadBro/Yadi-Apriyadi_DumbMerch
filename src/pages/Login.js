@@ -8,7 +8,7 @@ export default function Login(){
                 <div className="row mt-5 mb-5 ms-auto me-auto">
                     <div className="d-flex justify-content-between">
                         <div className="d-flex flex-column justify-content-between w-100">
-                            <img src={DumbMerchLogo} className="rounded float-start mb-4" alt=""  width='250'/>
+                            <img src={DumbMerchLogo} className="rounded float-start mb-4" alt="DumbMerchLogo"  width='250'/>
                             <h1 className='fw-bold mb-3' style={{ fontSize: '56px' }}>Easy, Fast and Reliable</h1>
                             <p className='col-md-9' style={{ fontWeight: 400, color: '#6A6A6A', fontSize: '18px' }}>Go shopping for merchandise, just go to dumb merch shopping, the biggest merchandise in <b>Indonesia</b></p>
                             <div className="d-flex justify-content-between mt-5" style={{ width: '18rem' }}>

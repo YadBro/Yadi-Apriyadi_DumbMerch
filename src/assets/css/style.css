@@ -21,6 +21,9 @@ body{
 .content-detail {
     max-width: 1000px;
 }
+.content-profile {
+    max-width: 1250px;
+}
 
 
 .active{
@@ -45,6 +48,13 @@ body{
     font-weight: 900;
     font-size: 24px;
     line-height: 33px;
+}
+
+.content-profile-img{
+    border-radius: 3px;
+    width: 338px;
+    height: 435px;
+    background-blend-mode: normal;
 }
 
 .card {
@@ -95,4 +105,57 @@ body{
     font-size: 24px;
     line-height: 32.78px;
     text-align: left;
+}
+
+
+.biodata-title {
+    color: var(--font-color-dumbmerch);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24.59px;
+}
+
+.biodata-main {
+    color: #ffffffe0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.59px;
+}
+
+.transaction {
+    background-color: #303030;
+    height: 150px;
+}
+
+.transaction-title {
+    color: var(--font-color-dumbmerch);
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19.12px;
+}
+
+.transaction-sub-title {
+    color: var(--font-color-dumbmerch);
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 12.29px;
+}
+
+.transaction-sub-title2 {
+    color: #f74d4da5;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 12.29px;
+}
+
+.transaction-price {
+    color: #ffffff7c;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13.66px;
+}
+
+.img-transaction {
+    width: 80px;
+    height: 120px;
 }
