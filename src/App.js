@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './assets/css/style.css';
-import Home from './pages/Home';
+import DetailPage from './pages/DetailPage';
 
 function App() {
   return (
     <>
-      <Home/>
+      <DetailPage/>
     </>
   );
 }

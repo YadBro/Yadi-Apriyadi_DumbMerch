@@ -12,9 +12,16 @@ body{
     background-color: black;
 }
 
+
+
 .content { 
     max-width: 1200px;
 }
+
+.content-detail {
+    max-width: 1000px;
+}
+
 
 .active{
     color: red !important;
@@ -65,4 +72,27 @@ body{
     width: 241px;
     height: 312px;
     border-radius: 5px 5px 0 0;
+}
+
+
+.detail-title {
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--font-color-dumbmerch);
+}
+
+.detail-product p{
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24.59px;
+    text-align: justify;
+}
+
+.detail-price {
+    color: var(--font-color-dumbmerch);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32.78px;
+    text-align: left;
 }
