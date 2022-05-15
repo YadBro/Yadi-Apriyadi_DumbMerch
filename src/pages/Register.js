@@ -4,7 +4,7 @@ import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png';
 export default function Register(){
     return (
         <section id="register">
-            <div className="container text-white p-3 mt-5" style={{ maxWidth: '1200px' }}>
+            <div className="container text-white p-3 mt-5 width-content">
                 <div className="row mt-5 mb-5 ms-auto me-auto">
                     <div className="d-flex justify-content-between">
                         <div className="d-flex flex-column justify-content-between w-100">
@@ -16,10 +16,10 @@ export default function Register(){
                                 <a className="btn p-2 rounded w-50" style={{ fontWeight: '800', color: '#B7B7B7' }}>Register</a>
                             </div>
                         </div>
-                        <div style={{width: '80%'}}>
-                            <div className="card m-5 p-4 pt-2" style={{ backgroundColor: '#181818', borderRadius: '10px'}}>
-                                <div className="card-body">
-                                    <p className='fw-bold card-title mb-4' style={{ fontSize: '36px' }}>Register</p>
+                        <div style={{width: '65%'}}>
+                            <div className="m-5 p-4 pt-2" style={{ backgroundColor: '#181818', borderRadius: '10px'}}>
+                                <div className="d-flex flex-column">
+                                    <p className='fw-bold mb-4' style={{ fontSize: '36px' }}>Register</p>
                                     <form>
                                         <div className="mb-3">
                                             <input type="text" className="form-control p-2 form-input" placeholder='Name' id="name" />
@@ -30,7 +30,7 @@ export default function Register(){
                                         <div className="mb-3">
                                             <input type="password" className="form-control p-2 form-input" placeholder='Password' id="exampleInputPassword1" />
                                         </div>
-                                        <button type="submit" className="btn card-link w-100 mt-4 p-2 submit-button">Register</button>
+                                        <button type="submit" className="btn w-100 mt-4 p-2 submit-button">Register</button>
                                     </form>
                                 </div>
                             </div>

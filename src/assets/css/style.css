@@ -3,9 +3,17 @@
     src: url("/src/assets/fonts/Avenir_Font/AvenirLTStd-Roman.otf");
 }
 
+:root {
+    --font-color-dumbmerch: #F74D4D;
+}
+
 body{
     font-family: 'avenir';
     background-color: black;
+}
+
+.content { 
+    max-width: 1200px;
 }
 
 .active{
@@ -14,7 +22,7 @@ body{
 
 .submit-button{ 
     font-weight: 800;
-    background-color: #F74D4D; 
+    background-color: var(--font-color-dumbmerch);
     color: white;
 }
 
@@ -22,4 +30,39 @@ body{
     color: white;
     border: 2px solid #BCBCBC;
     background: rgba(210, 210, 210, 0.25);
+}
+
+.content-title {
+    color: var(--font-color-dumbmerch);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.card {
+    background-color: #212121;
+    border-radius: 5px;
+    width: 214px;
+    height: 410px;
+}
+
+.card-title {
+    color: var(--font-color-dumbmerch);
+    font-size: 18px;
+    line-height: 24.59px;
+}
+
+.card-text {
+    font-weight: 100;
+    font-size: 14px;
+    color: #ffffff9b;
+    line-height: 19.12px;
+    font-style: normal;
+}
+
+.card-img-top{
+    width: 241px;
+    height: 312px;
+    border-radius: 5px 5px 0 0;
 }

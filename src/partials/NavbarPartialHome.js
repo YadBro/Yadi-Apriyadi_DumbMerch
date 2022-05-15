@@ -30,13 +30,10 @@ export default function NavbarPartial(){
                             </ul>
                         </li>
                         <li className="nav-item me-2">
-                            <a className="nav-link active text-white" aria-current="page" href="#">Complain</a>
+                            <a className="nav-link text-white" aria-current="page" href="#">Complain</a>
                         </li>
                         <li className="nav-item me-2">
-                            <a className="nav-link fw-900 text-white" aria-current="page" href="#">Category</a>
-                        </li>
-                        <li className="nav-item me-2">
-                            <a className="nav-link text-white" aria-current="page" href="#">Product</a>
+                            <a className="nav-link text-white" aria-current="page" href="#">Profile</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white" aria-current="page" href="#">Logout</a>
