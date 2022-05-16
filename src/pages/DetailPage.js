@@ -1,10 +1,10 @@
 import MouseImg from '../assets/img/Mouse.png';
-import NavbarPartialHome from '../partials/NavbarPartialHome';
+import NavbarPartial from '../partials/NavbarPartial';
 
 export default function DetailPage() {
     return (
         <>
-        <NavbarPartialHome />
+        <NavbarPartial />
             <div className="content-detail mt-5 mb-5 ms-auto me-auto">
                 <div className="d-flex gap-5">
                     <div style={{ width: '49%' }}>

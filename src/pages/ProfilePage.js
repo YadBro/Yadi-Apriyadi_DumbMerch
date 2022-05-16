@@ -1,29 +1,38 @@
-import NavbarPartialHome from '../partials/NavbarPartialHome';
+import NavbarPartial from '../partials/NavbarPartial';
 import AbangTampan from '../assets/img/AbangTampan.png';
+import my_img from '../assets/img/my-img.PNG';
 import Mouse from '../assets/img/Mouse.png';
 import DumbMerchLogo from '../assets/img/DumbMerch_Logo.png';
+import { UserContext } from '../context/User';
+import { LoginContext } from '../context/AuthenticatedContext';
+import { useContext } from 'react';
 
 export default function ProfilePage(){
+    let { user } = useContext(UserContext);
+    let { isLogin } = useContext(LoginContext);
+    if (isLogin){
+        user = JSON.parse(user);
+    }
     return(
         <>
-        <NavbarPartialHome />
+        <NavbarPartial/>
         <section id='profile'>
             <div className="d-flex content-profile mt-5 mb-5 ms-auto me-auto">
                 <div style={{ width: '65%' }}>
                     <h3 className="content-title">My Profile</h3>
                     <div className="d-flex mt-5 gap-4">
                         <div className="content-image">
-                            <img src={AbangTampan} alt="PhotoProfile" className="img-fluid content-profile-img" />
+                            <img src={user?.name === 'Yadi Apriyadi' ? my_img : AbangTampan} alt="PhotoProfile" className="img-fluid content-profile-img" style={{ width : '338px', height: '435px' }} />
                         </div>
                         <div className="d-flex flex-column">
                             <div className="p-1">
                                 <div className="mb-4">
                                     <h4 className="biodata-title">Name</h4>
-                                    <p className="biodata-main">Yosep</p>
+                                    <p className="biodata-main">{user?.name ? user?.name : 'Yosep'}</p>
                                 </div>
                                 <div className="mb-4">
                                     <h4 className="biodata-title">Email</h4>
-                                    <p className="biodata-main">yosepgans@gmail.com</p>
+                                    <p className="biodata-main">{user?.email ? user?.email : 'yosepgans@gmail.com'}</p>
                                 </div>
                                 <div className="mb-4">
                                     <h4 className="biodata-title">Phone</h4>

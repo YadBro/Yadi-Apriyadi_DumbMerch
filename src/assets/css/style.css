@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 @font-face {
     font-family: 'avenir';
     src: url("/src/assets/fonts/Avenir_Font/AvenirLTStd-Roman.otf");
@@ -25,6 +27,19 @@ body{
     max-width: 1250px;
 }
 
+.nav-link:hover{
+    color: var(--font-color-dumbmerch) !important;
+}
+
+sup:hover {
+    color: greenyellow !important;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+}
 
 .active{
     color: red !important;
@@ -36,7 +51,19 @@ body{
     color: white;
 }
 
+.edit-button{
+    font-weight: 800;
+    color: white;
+    background-color: #56C05A;
+}
+
 .form-input {
+    color: white;
+    border: 2px solid #BCBCBC;
+    background: rgba(210, 210, 210, 0.25);
+}
+
+.form-input:focus {
     color: white;
     border: 2px solid #BCBCBC;
     background: rgba(210, 210, 210, 0.25);
@@ -52,8 +79,6 @@ body{
 
 .content-profile-img{
     border-radius: 3px;
-    width: 338px;
-    height: 435px;
     background-blend-mode: normal;
 }
 
@@ -159,3 +184,37 @@ body{
     width: 80px;
     height: 120px;
 }
+
+
+tr:nth-child(even) {
+    background-color: #303030 !important;
+}
+tr:nth-child(odd) {
+    background-color: #232323 !important;
+}
+th {
+    background-color: #303030 !important;
+}
+
+
+thead {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+tbody {
+    font-weight: 100 !important;
+    font-size: 18px;
+    color: #ffffffa7;
+}
+
+table > tbody > tr > td {
+    padding: 10px 0;
+    border-bottom: 1.52px solid #C4C4C4;
+}
+table > thead > tr > th {
+    padding: 10px 0;
+    border-bottom: 1.52px solid #C4C4C4;
+}
+
