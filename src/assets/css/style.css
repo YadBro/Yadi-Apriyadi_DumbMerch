@@ -5,6 +5,8 @@
     src: url("/src/assets/fonts/Avenir_Font/AvenirLTStd-Roman.otf");
 }
 
+
+
 :root {
     --font-color-dumbmerch: #F74D4D;
 }
@@ -32,7 +34,7 @@ body{
 }
 
 sup:hover {
-    color: greenyellow !important;
+    color: white !important;
 }
 
 .logout-button {
@@ -214,7 +216,38 @@ table > tbody > tr > td {
     border-bottom: 1.52px solid #C4C4C4;
 }
 table > thead > tr > th {
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: 1.52px solid #C4C4C4;
 }
 
+::-webkit-file-upload-button{
+    font-size: 18px;
+    background: var(--font-color-dumbmerch) !important;
+    border: none !important;
+    color: white !important;
+    padding: 5px 20px !important;
+    border-radius: 5px !important;
+    margin-left: 0.1px !important;
+}
+
+.upload-box:focus {
+    background: none !important;
+}
+.upload-box:hover {
+    background: none !important;
+}
+
+.upload-box {
+    background: none;
+    border: none;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,
+.form-input:hover,.form-input:focus,.form-input:active 
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
+}

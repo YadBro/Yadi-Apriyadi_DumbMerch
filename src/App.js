@@ -12,6 +12,8 @@ import { UserProvider } from './context/User';
 import Category from './pages/Category';
 import PrivateRoute from './PrivateRoute';
 import EditCategory from './pages/EditCategory';
+import ProductList from './pages/ProductList';
+import EditProduct from './pages/EditProduct';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path='/' element={<PrivateRoute />}>
               <Route exact path='category' element={<Category/>}/>
               <Route path='category/edit' element={<EditCategory />}/>
+              <Route path='product-list' element={<ProductList />}/>
+              <Route path='product-list/edit' element={<EditProduct />}/>
             </Route>
           </Routes>
         </UserProvider>

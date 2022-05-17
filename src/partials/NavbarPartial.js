@@ -42,7 +42,7 @@ export default function NavbarPartial(){
                         <li className="nav-item dropdown me-2">
                             <a className="nav-link dropdown-toggle" href="/cart" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <FontAwesomeIcon icon={solid('cart-shopping')} size='lg' />
-                                <sup className="ms-1 text-white" style={{ fontSize: '15px' }}>+3</sup>
+                                <sup className="ms-1" style={{ fontSize: '15px', color: 'greenyellow' }}>+6</sup>
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><Link className="dropdown-item" to="cart">Mouse (1x)</Link></li>
@@ -54,9 +54,16 @@ export default function NavbarPartial(){
                             <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/complain">Complain</NavLink>
                         </li>
                         {user?.isAdmin &&
-                        <li className="nav-item me-2">
-                            <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/category">Category</NavLink>
-                        </li>
+                        (
+                        <>
+                            <li className="nav-item me-2">
+                                <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/category">Category</NavLink>
+                            </li>
+                            <li className="nav-item me-2">
+                                <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/product-list">Product</NavLink>
+                            </li>
+                        </>
+                        )
                         }
                         <li className="nav-item me-2">
                             <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/profile">Profile</NavLink>
