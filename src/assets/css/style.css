@@ -29,6 +29,7 @@ body{
     max-width: 1250px;
 }
 
+
 .nav-link:hover{
     color: var(--font-color-dumbmerch) !important;
 }
@@ -245,9 +246,76 @@ table > thead > tr > th {
 }
 
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,
-.form-input:hover,.form-input:focus,.form-input:active 
+.form-input:hover,.form-input:focus,.form-input:active, .message-input:hover,.message-input:focus,.message-input:active,
 .btn-primary:active:focus:not(:disabled):not(.disabled),
 .btn:focus, .btn:active, .btn:hover{
     box-shadow: none!important;
     outline: 0;
+}
+
+.message-input {
+    background: rgb(35,35,35);
+    border: none;
+    height: 59px;
+    border-radius: unset;
+    color: white;
+}
+.message-input:focus {
+    background: rgb(35,35,35);
+    border: none;
+    color: white;
+}
+
+.speech {
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    top: 0;
+    left: 0;
+    margin-top: 5%;
+    margin-left: 12%;
+    width: 10%;
+    height: 36%;
+    z-index: -5;
+    background-color: rgb(87,87,87);
+}
+
+.speech p{
+    color: #cacaca;
+    font-size: 16px;
+}
+
+.profile-message{
+    width: 10%;
+    clip-path: circle(40%);
+}
+.profile-message-side{
+    width: 15%;
+    clip-path: circle(40%);
+}
+
+.contact-name-side h1, p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
+}
+
+.contact-name-side p{
+    color: #ABABAB;
+}
+
+
+.speech2 {
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    top: 2px;
+    right: 0;
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 11%;
+    height: 60%;
+    z-index: -5;
+    background-color: #262626;
+}
+
+.speech2 p{
+    color: #262626;
+    font-size: 16px;
 }

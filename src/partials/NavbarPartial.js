@@ -26,7 +26,7 @@ export default function NavbarPartial(){
         color: '#F74D4D'
     }
     return(
-        <nav className="navbar fw-bold navbar-expand-lg navbar-dark p-4" style={{ fontSize: '18px' }}>
+        <nav className="navbar fw-bold navbar-expand-lg navbar-dark py-2 px-5" style={{ fontSize: '18px' }}>
             <div className="container-fluid">
             <Link className="navbar-brand" to='/'>
                 <img src={DumbMerchLogo} alt="DumbMerch Logo" width="70" height="68.22" />
@@ -50,9 +50,11 @@ export default function NavbarPartial(){
                                 <li><span className="dropdown-item">Total Product</span></li>
                             </ul>
                         </li>
-                        <li className="nav-item me-2">
-                            <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/complain">Complain</NavLink>
-                        </li>
+                        { isLogin && (
+                            <li className="nav-item me-2">
+                                <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/complain">Complain</NavLink>
+                            </li>
+                        )}
                         {user?.isAdmin &&
                         (
                         <>
@@ -65,18 +67,24 @@ export default function NavbarPartial(){
                         </>
                         )
                         }
-                        <li className="nav-item me-2">
-                            <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/profile">Profile</NavLink>
-                        </li>
-                        <li className="nav-item">
                         {
                             (isLogin) 
                             ?
-                            <button className="nav-link text-white logout-button fw-bold" style={{ cursor: "pointer" }} onClick={logOut}>Logout</button>
+                            (
+                            <>
+                                <li className="nav-item me-2">
+                                    <NavLink className="nav-link text-white" style={({isActive}) => isActive ? isActiveStyle : undefined} to="/profile">Profile</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="nav-link text-white logout-button fw-bold" style={{ cursor: "pointer" }} onClick={logOut}>Logout</button>
+                                </li>
+                            </>
+                            )
                             :
-                            <NavLink className="nav-link text-white" to="/login">Login</NavLink>
+                            (
+                                <NavLink className="nav-link text-white" to="/login">Login</NavLink>
+                            )
                         }
-                        </li>
                     </ul>
                 </div>
             </div>

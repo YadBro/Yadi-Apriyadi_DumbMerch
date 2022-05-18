@@ -8,32 +8,36 @@ import Register from './pages/Register';
 import ProfilePage from './pages/ProfilePage';
 import DetailPage from './pages/DetailPage';
 import { LoginProvider } from './context/AuthenticatedContext';
-import { UserProvider } from './context/User';
 import Category from './pages/Category';
 import PrivateRoute from './PrivateRoute';
 import EditCategory from './pages/EditCategory';
 import ProductList from './pages/ProductList';
 import EditProduct from './pages/EditProduct';
+import Complain from './pages/Complain';
+import IsAdminRoute from './IsAdminRoute';
 
 function App() {
   return (
     <>
       <LoginProvider>
-        <UserProvider>
           <Routes>
             <Route exact path='/' element={<Home />}/>
-            <Route path='profile' element={<ProfilePage />}/>
             <Route path='login' element={<Login />}/>
             <Route path='register' element={<Register />}/>
             <Route path='product-detail' element={<DetailPage />}/>
-            <Route path='/' element={<PrivateRoute />}>
-              <Route exact path='category' element={<Category/>}/>
-              <Route path='category/edit' element={<EditCategory />}/>
-              <Route path='product-list' element={<ProductList />}/>
-              <Route path='product-list/edit' element={<EditProduct />}/>
+            <Route exact path='/' element={<PrivateRoute />}>
+              <Route path='complain' element={<Complain />}/>
+              <Route path='profile' element={<ProfilePage />}/>
+
+              <Route exact path='/' element={<IsAdminRoute />}> 
+                <Route exact path='category' element={<Category/>}/>
+                <Route path='category/edit' element={<EditCategory />}/>
+                <Route path='product-list' element={<ProductList />}/>
+                <Route path='product-list/edit' element={<EditProduct />}/>
+              </Route>
+
             </Route>
           </Routes>
-        </UserProvider>
       </LoginProvider>
     </>
   );
